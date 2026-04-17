@@ -9,7 +9,7 @@
 ### 1. Show contents of home directory
 
 ```bash
-student@ubuntu:~$ ls
+kukhta@ubuntu:~$ ls
 Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
 projects  code  .bashrc  .profile  .cache  .config  .local
 ```
@@ -19,11 +19,11 @@ projects  code  .bashrc  .profile  .cache  .config  .local
 ### 2. Go to Downloads directory and show its contents
 
 ```bash
-student@ubuntu:~$ cd Download
+kukhta@ubuntu:~$ cd Download
 bash: cd: Download: No such file or directory
 
-student@ubuntu:~$ cd Downloads
-student@ubuntu:~/Downloads$ ls
+kukhta@ubuntu:~$ cd Downloads
+kukhta@ubuntu:~/Downloads$ ls
 chrome-linux.deb  telegram-desktop.tar.xz  ubuntu-22.04.iso
 image1.png  image2.jpg  screenshot_2024-10-10.png
 notes.pdf  resume.pdf  book_linux_basics.pdf
@@ -35,13 +35,13 @@ archive.zip  project_backup.tar.gz  music.mp3
 ### 3. Create an empty file (without `touch`)
 
 ```bash
-student@ubuntu:~/Downloads$ touch temp.txt
+kukhta@ubuntu:~/Downloads$ touch temp.txt
 # (realized it's not allowed)
 
-student@ubuntu:~/Downloads$ rm temp.txt
+kukhta@ubuntu:~/Downloads$ rm temp.txt
 
-student@ubuntu:~/Downloads$ echo "" > empty_file.txt
-student@ubuntu:~/Downloads$ ls
+kukhta@ubuntu:~/Downloads$ echo "" > empty_file.txt
+kukhta@ubuntu:~/Downloads$ ls
 chrome-linux.deb  telegram-desktop.tar.xz  ubuntu-22.04.iso
 image1.png  image2.jpg  screenshot_2024-10-10.png
 notes.pdf  resume.pdf  book_linux_basics.pdf
@@ -54,10 +54,10 @@ empty_file.txt
 ### 4. View file content
 
 ```bash
-student@ubuntu:~/Downloads$ cat emptyfile.txt
+kukhta@ubuntu:~/Downloads$ cat emptyfile.txt
 cat: emptyfile.txt: No such file or directory
 
-student@ubuntu:~/Downloads$ cat empty_file.txt
+kukhta@ubuntu:~/Downloads$ cat empty_file.txt
 
 ```
 
@@ -66,12 +66,12 @@ student@ubuntu:~/Downloads$ cat empty_file.txt
 ### 5. Go to home directory using absolute path
 
 ```bash
-student@ubuntu:~/Downloads$ cd home/student
-bash: cd: home/student: No such file or directory
+kukhta@ubuntu:~/Downloads$ cd home/kukhta
+bash: cd: home/kukhta: No such file or directory
 
-student@ubuntu:~/Downloads$ cd /home/student
-student@ubuntu:~$ pwd
-/home/student
+kukhta@ubuntu:~/Downloads$ cd /home/kukhta
+kukhta@ubuntu:~$ pwd
+/home/kukhta
 ```
 
 ---
@@ -79,17 +79,17 @@ student@ubuntu:~$ pwd
 ### 6. Go to home directory using relative path
 
 ```bash
-student@ubuntu:~$ cd ..
-student@ubuntu:/home$ ls
-student
+kukhta@ubuntu:~$ cd ..
+kukhta@ubuntu:/home$ ls
+kukhta
 
-student@ubuntu:/home$ cd student
-student@ubuntu:~$ pwd
-/home/student
+kukhta@ubuntu:/home$ cd kukhta
+kukhta@ubuntu:~$ pwd
+/home/kukhta
 
-student@ubuntu:~$ cd ~
-student@ubuntu:~$ pwd
-/home/student
+kukhta@ubuntu:~$ cd ~
+kukhta@ubuntu:~$ pwd
+/home/kukhta
 ```
 
 ---
@@ -99,7 +99,7 @@ student@ubuntu:~$ pwd
 ### Commands executed:
 
 ```bash
-student@ubuntu:~$ man ls
+kukhta@ubuntu:~$ man ls
 LS(1)                         User Commands                        LS(1)
 
 NAME
@@ -107,28 +107,28 @@ NAME
 ```
 
 ```bash
-student@ubuntu:~$ help cd
+kukhta@ubuntu:~$ help cd
 cd: cd [-L|[-P [-e]] [-@]] [dir]
     Change the shell working directory.
 ```
 
 ```bash
-student@ubuntu:~$ man cat
+kukhta@ubuntu:~$ man cat
 CAT(1)                        User Commands                       CAT(1)
 ```
 
 ```bash
-student@ubuntu:~$ man man
+kukhta@ubuntu:~$ man man
 MAN(1)                        Manual pager utils                  MAN(1)
 ```
 
 ```bash
-student@ubuntu:~$ cp --help
+kukhta@ubuntu:~$ cp --help
 Usage: cp [OPTION]... SOURCE DEST
 ```
 
 ```bash
-student@ubuntu:~$ mv --help
+kukhta@ubuntu:~$ mv --help
 Usage: mv [OPTION]... SOURCE DEST
 ```
 
@@ -139,10 +139,10 @@ Usage: mv [OPTION]... SOURCE DEST
 **1. Which key in `ls` shows hidden files?**
 
 ```bash
-student@ubuntu:~$ ls -A
+kukhta@ubuntu:~$ ls -A
 .bashrc  .profile  .cache  .config  Desktop  Documents
 
-student@ubuntu:~$ ls -a
+kukhta@ubuntu:~$ ls -a
 .  ..  .bashrc  .profile  .cache  .config  .local  Desktop  Documents  Downloads
 ```
 
@@ -153,12 +153,12 @@ Answer: `-a`
 **2. Which key in `cat` numbers lines?**
 
 ```bash
-student@ubuntu:~$ cat notes.txt
+kukhta@ubuntu:~$ cat notes.txt
 cat: notes.txt: No such file or directory
 
-student@ubuntu:~$ echo "Hello Linux" > notes.txt
+kukhta@ubuntu:~$ echo "Hello Linux" > notes.txt
 
-student@ubuntu:~$ cat -n notes.txt
+kukhta@ubuntu:~$ cat -n notes.txt
      1  Hello Linux
 ```
 
@@ -176,29 +176,29 @@ Answer: `-n`
 ## Task 3. Mini Scenario (2 points)
 
 ```bash
-student@ubuntu:~$ cd Documents
-student@ubuntu:~/Documents$ ls
+kukhta@ubuntu:~$ cd Documents
+kukhta@ubuntu:~/Documents$ ls
 report.docx  homework1.md  project_notes.txt  images  code
 
-student@ubuntu:~/Documents$ echo Hello Linux > notes.txt
+kukhta@ubuntu:~/Documents$ echo Hello Linux > notes.txt
 
-student@ubuntu:~/Documents$ ls
+kukhta@ubuntu:~/Documents$ ls
 report.docx  homework1.md  project_notes.txt  notes.txt  images  code
 
-student@ubuntu:~/Documents$ cd /var/logg
+kukhta@ubuntu:~/Documents$ cd /var/logg
 bash: cd: /var/logg: No such file or directory
 
-student@ubuntu:~/Documents$ cd /var/log
-student@ubuntu:/var/log$ ls
+kukhta@ubuntu:~/Documents$ cd /var/log
+kukhta@ubuntu:/var/log$ ls
 apt  auth.log  boot.log  dpkg.log  kern.log  syslog  journal
 
-student@ubuntu:/var/log$ cd -
-/home/student/Documents
+kukhta@ubuntu:/var/log$ cd -
+/home/kukhta/Documents
 
-student@ubuntu:~/Documents$ man lss
+kukhta@ubuntu:~/Documents$ man lss
 No manual entry for lss
 
-student@ubuntu:~/Documents$ man ls
+kukhta@ubuntu:~/Documents$ man ls
 LS(1)                         User Commands                        LS(1)
 ```
 
