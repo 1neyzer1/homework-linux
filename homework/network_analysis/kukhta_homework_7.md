@@ -85,10 +85,3 @@ Server: nginx/1.25.x
 Тепер за адресою **http://localhost:8080** у браузері відкривається стандартна сторінка Nginx.
 
 ---
-
-## Структура репозиторію
-```bash
-homework/
-└── network_analysis/
-    └── kukhta_homework_7.md
-```
