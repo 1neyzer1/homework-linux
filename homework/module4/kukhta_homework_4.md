@@ -1,4 +1,4 @@
-# Module 1 — Packages, Services and Logs
+# Module 4 — Packages, Services and Logs
 
 **File:** kukhta_homework_4.md
 
