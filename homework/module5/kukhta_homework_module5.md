@@ -4,7 +4,7 @@
 
 ---
 
-## Task 1. Network Diagnostics (2 points)
+## Task 1. Network Diagnostics 
 
 ### 1. Show IP addresses and interfaces
 
@@ -50,7 +50,7 @@ tcp   LISTEN  0      100    127.0.0.1:631       users:(("cupsd",pid=650))
 
 ---
 
-## Task 2. SSH Access with Keys (4 points)
+## Task 2. SSH Access with Keys 
 
 ### 1. Generate SSH key
 
@@ -114,7 +114,7 @@ Last login: Thu Apr 23 11:20
 
 ---
 
-## Task 3. File Transfer (4 points)
+## Task 3. File Transfer 
 
 ### 1. Create test file
 
@@ -175,13 +175,3 @@ notes.txt  project.txt
 **Comment:** Files are present on server, verified via SFTP.
 
 ---
-
-## Summary
-
-* Local IP: **192.168.1.105**
-* Internet: **Available**
-* Listening service: **sshd (port 22)**
-* SSH Host: **myserver**
-* Passwordless login: **Working**
-* Remote path: **/home/user/sync_folder/**
-* Verification command: **sftp ls**
